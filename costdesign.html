@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<script defer src="js/jquery.flexslider.js"></script>
+	<script defer src="js/jquery.flexslider.js"></script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -183,25 +183,25 @@
 
 	<script>
 	$(window).load(function() {
-  // The slider being synced must be initialized first
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: 210,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
- 
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
-});</script>
+	  // The slider being synced must be initialized first
+	  $('#carousel').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		itemWidth: 210,
+		itemMargin: 5,
+		asNavFor: '#slider'
+	  });
+	 
+	  $('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		sync: "#carousel"
+	  });
+	});</script>
 </body>
 
 </html>
