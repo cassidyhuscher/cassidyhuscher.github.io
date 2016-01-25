@@ -11,6 +11,9 @@
     <meta name="author" content="">
 
     <title>Cassidy Huscher</title>
+	
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +27,24 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style type="text/css">
+	.flex-caption {
+	  width: 96%;
+	  padding: 2%;
+	  left: 0;
+	  bottom: 0;
+	  background: rgba(0,0,0,.5);
+	  color: #fff;
+	  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	  font-size: 14px;
+	  line-height: 18px;
+	}
+	</style>
 
 </head>
 
 <body>
+	<script defer src="js/jquery.flexslider.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -73,13 +90,29 @@
         <!-- Portfolio Item Row -->
         <div class="row">
 
-            <div class="col-md-8">
-                <img class="img-responsive" src="images/bio/trio.jpg" alt="Cassidy Huscher (Left) and Friends">
-            </div>
+			<div class="col-md-8 flexslider">
+			  <ul class="slides">
+				<li>
+				  <img class="img-responsive" src="images/costdesign/Detroit67/Detroit12.jpg" />
+				</li>
+				<li>
+				  <img class="img-responsive" src="images/costtech/Flora/Flora04.jpg" />
+				</li>
+				<li>
+				  <img class="img-responsive" src="images/costdesign/Detroit67/Detroit14.jpg" />
+				</li>
+				<li>
+				  <img class="img-responsive" src="images/costtech/Hudson/Hudson03.jpg" />
+				</li>
+				<li>
+				  <img class="img-responsive" src="images/costtech/Nora/Nora05.jpg" />
+				</li>
+			  </ul>
+			</div>
 
             <div class="col-md-4">
                 <h3>Cassidy Huscher</h3>
-                <p>Cassidy Huscher (left) is a Senior Theatre Design and Film Media student at the University of Kansas looking at attending Graduate School for Costume Design Fall 2017.   While in school, they work in the University Theatre Costume Shop as a stitcher/costume shop assistant and at the local roadhouse the Lied Center of Kansas on their technical crew.</p>
+                <p>Cassidy Huscher is a Senior Theatre Design and Film Media student at the University of Kansas looking at attending Graduate School for Costume Design Fall 2017.   While in school, they work in the University Theatre Costume Shop as a stitcher/costume shop assistant and at the local roadhouse, the Lied Center of Kansas, on their technical crew.</p>
             </div>
 
         </div>
@@ -105,6 +138,14 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+		animation: "slide"
+	  });
+	});
+	</script>
 
 </body>
 
