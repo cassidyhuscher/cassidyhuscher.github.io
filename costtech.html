@@ -13,7 +13,7 @@
     <title>Cassidy Huscher</title>
 
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
-    
+
 	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -53,10 +53,10 @@
                     <li>
                         <a href="film.html">Film</a>
                     </li>
-					<li>
+										<li>
                         <a href="costtech.html">Costume Technology</a>
                     </li>
-					<li>
+										<li>
                         <a href="costdesign.html">Costume Design</a>
                     </li>
                     <li>
@@ -79,6 +79,35 @@
             </div>
         </div>
         <!-- /.row -->
+
+				<!-- Project Zero -->
+				<div class="row">
+				<div class="col-md-7 flexslider">
+				<div id="slider0" class="flexslider">
+					<ul class="slides">
+					<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costtech/Amy_March/amy01.jpg" /></li>
+					<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costtech/Amy_March/amy02.jpg" /></li>
+					<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costtech/Amy_March/amy03.jpg" /></li>
+					</ul>
+				</div>
+				<div id="carousel0" class="flexslider" style="position: relative;">
+					<ul class="slides">
+					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Amy_March/amy01.jpg" /></li>
+					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Amy_March/amy02.jpg" /></li>
+					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Amy_March/amy03.jpg" /></li>
+					</ul>
+				</div>
+				</div>
+					<div class="col-md-5">
+						<h3>Amy March</h3>
+						<h4>Little Women - The Broadway Musical</h4>
+						<p>Costume Design by Kelly Vogel</p>
+			<!--			<p><strong>Skills Used:</strong> Sewing velvet, Rigilene boning, separating zipper, matching lace patterns, sewing two-piece sleeves, built to fit.</p>		-->
+				</div>
+				</div>
+				<!-- /.row -->
+
+				<hr>
 
         <!-- Project One -->
         <div class="row">
@@ -122,7 +151,7 @@
 					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Nora/Nora14.jpg" /></li>
 					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Nora/Nora15.jpg" /></li>
 					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Nora/Nora16.jpg" /></li>
-					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Nora/Nora17.jpg" /></li>				
+					<li><img style="vertical-align: middle; max-height: 200px;  width: auto" class="img-responsive" src="images/costtech/Nora/Nora17.jpg" /></li>
 				  </ul>
 				</div>
 			</div>
@@ -316,7 +345,7 @@
         <!-- /.row -->
 
         <hr>
-		
+
 		<!-- Project seven -->
         <div class="row">
 			<div class="col-md-7 flexslider">
@@ -352,7 +381,7 @@
         <!-- /.row -->
 
         <hr>
-        
+
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
@@ -444,7 +473,7 @@
         <!-- /.row -->
 
         <hr>
-		
+
 		<!-- props three -->
         <div class="row">
 			<div class="col-md-7 flexslider">
@@ -541,11 +570,27 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-	
+
 	<script>
 	$(window).load(function() {
 	  // The slider being synced must be initialized first
-	  $('#carousel1').flexslider({
+		$('#carousel0').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: true,
+		slideshow: false,
+		itemWidth: 210,
+		itemMargin: 5,
+		asNavFor: '#slider0'
+		});
+		$('#slider0').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: true,
+		slideshow: false,
+		sync: "#carousel0"
+		});
+		$('#carousel1').flexslider({
 		animation: "slide",
 		controlNav: false,
 		animationLoop: true,
@@ -561,7 +606,7 @@
 		slideshow: false,
 		sync: "#carousel1"
 	  });
-	  	 
+
 	 $('#carousel2').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -578,7 +623,7 @@
 		slideshow: false,
 		sync: "#carousel2"
 	  });
-	
+
 	$('#carousel3').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -595,7 +640,7 @@
 		slideshow: false,
 		sync: "#carousel3"
 	  });
-	  	
+
 	$('#carousel4').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -612,7 +657,7 @@
 		slideshow: false,
 		sync: "#carousel4"
 	  });
-	  	
+
 	$('#carousel5').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -629,7 +674,7 @@
 		slideshow: false,
 		sync: "#carousel5"
 	  });
-	  	
+
 	$('#carousel6').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -646,7 +691,7 @@
 		slideshow: false,
 		sync: "#carousel6"
 	  });
-	  	
+
 	$('#carousel7').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -663,7 +708,7 @@
 		slideshow: false,
 		sync: "#carousel7"
 	  });
-	  	
+
 	$('#carousel8').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -680,7 +725,7 @@
 		slideshow: false,
 		sync: "#carousel8"
 	  });
-	  	
+
 	$('#carousel9').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -697,7 +742,7 @@
 		slideshow: false,
 		sync: "#carousel9"
 	  });
-	  	
+
 	$('#carousel10').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -714,7 +759,7 @@
 		slideshow: false,
 		sync: "#carousel10"
 	  });
-	  	
+
 	$('#carousel11').flexslider({
 		animation: "slide",
 		controlNav: false,
@@ -731,7 +776,7 @@
 		slideshow: false,
 		sync: "#carousel11"
 	  });
-	  
+
 	});
 	</script>
 

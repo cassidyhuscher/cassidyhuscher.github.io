@@ -13,7 +13,7 @@
     <title>Cassidy Huscher</title>
 
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -79,6 +79,46 @@
             </div>
         </div>
         <!-- /.row -->
+
+				<!-- Project Zero -->
+				<div class="row">
+						<div class="col-md-7 flexslider">
+				<div id="slider2" class="flexslider">
+				<ul class="slides">
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo01.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo02.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo03.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo04.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo05.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo06.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo07.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo08.jpg" /></li>
+				<li><img style="max-height: 470px; width: auto; margin:auto;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo09.jpg" /></li>
+				</ul>
+				</div>
+				<div id="carousel2" class="flexslider" style="position: relative;">
+				<ul class="slides">
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo01.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo02.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo03.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo04.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo05.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo06.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo07.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo08.jpg" /></li>
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Arroyo/Arroyo09.jpg" /></li>
+				</ul>
+				</div>
+
+						</div>
+						<div class="col-md-5">
+								<h3>Welcome to Arroyo's by Kristoffer Diaz</h3>
+								<h4>Directed by Nicole Hodges Persley</h4>
+				<p>With two live Djs serving as a Greek chorus spinning this coming-of-age story, Welcome to Arroyo's follows siblings Alejandro and Molly Arroyo as they navigate life after their mother's death.</p>
+				<p>Produced at the University of Kansas, Spring 2016.</p>
+						</div>
+				</div>
+				<!-- /.row -->
 
         <!-- Project One -->
         <div class="row">
@@ -146,10 +186,10 @@
 				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Detroit67/Detroit26.jpg" /></li>
 				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Detroit67/Detroit27.jpg" /></li>
 				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Detroit67/Detroit28.jpg" /></li>
-				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Detroit67/Detroit29.jpg" /></li>			
+				<li><img style="vertical-align: middle;" class="img-responsive" src="images/costdesign/Detroit67/Detroit29.jpg" /></li>
 			  </ul>
-			</div>  
-	
+			</div>
+
             </div>
             <div class="col-md-5">
                 <h3>Detroit '67 by Dominique Morisseau</h3>
@@ -161,6 +201,8 @@
         <!-- /.row -->
 
         <hr>
+
+
 
         <!-- Footer -->
         <footer>
@@ -193,13 +235,31 @@
 		itemMargin: 5,
 		asNavFor: '#slider'
 	  });
-	 
+
 	  $('#slider').flexslider({
 		animation: "slide",
 		controlNav: false,
 		animationLoop: true,
 		slideshow: false,
 		sync: "#carousel"
+	  });
+
+		$('#carousel2').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: true,
+		slideshow: false,
+		itemWidth: 210,
+		itemMargin: 5,
+		asNavFor: '#slider2'
+	  });
+
+	  $('#slider2').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: true,
+		slideshow: false,
+		sync: "#carousel2"
 	  });
 	});</script>
 </body>
